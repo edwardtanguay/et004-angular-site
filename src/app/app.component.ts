@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'et004-angular-site';
+  title = 'Info Site';
+  message = 'Welcome to this Angular site.'
 }
