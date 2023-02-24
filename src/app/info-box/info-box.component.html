@@ -4,8 +4,11 @@
 		 class="supertitle">Please read:</div>
 	<div class="title">{{title}}</div>
 	<div class="body">{{body}}</div>
-	<hr />
-	<div [ngSwitch]="status" class="devInfo">
+	<button (click)="handleToggleDevInfo()">Toggle Dev Info</button>
+	<div [ngSwitch]="status"
+		 class="devInfo"
+		 *ngIf="showDevInfo">
+		<hr />
 		<span *ngSwitchCase="'danger'">This info-box warns a user.</span>
 		<span *ngSwitchCase="'success'">Success is displayed when no action is required.</span>
 		<span *ngSwitchDefault>Unknown status code: {{status}}</span>

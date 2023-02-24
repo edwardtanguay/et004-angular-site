@@ -10,11 +10,17 @@ export class InfoBoxComponent {
 	@Input() body = '(watch this space...)';
 	@Input() status = '';
 	color = '';
+	showDevInfo = true;
 
 	constructor() {
 	}
 
 	ngOnInit() {
 		this.color = this.status === 'danger' ? 'red' : this.status === '' ? '' : 'green';
+	}
+
+	handleToggleDevInfo() {
+		this.showDevInfo = !this.showDevInfo;
+		console.log(`Component "${this.title}" now has showDevInfo status ${this.showDevInfo}.`);
 	}
 }
