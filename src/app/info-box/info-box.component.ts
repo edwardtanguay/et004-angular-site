@@ -12,6 +12,7 @@ export class InfoBoxComponent {
 	@Input() isHighlighted = false;
 	color = '';
 	showDevInfo = true;
+	buttonIsDisabled = true;
 
 	constructor() {
 	}

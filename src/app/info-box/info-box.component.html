@@ -5,7 +5,10 @@
 		 class="supertitle">Please read:</div>
 	<div class="title">{{title}}</div>
 	<div class="body">{{body}}</div>
-	<button (click)="handleToggleDevInfo()">Toggle Dev Info</button>
+	    <input
+    type="checkbox"
+    [checked]="!buttonIsDisabled"
+    (change)="buttonIsDisabled = !buttonIsDisabled"/><button (click)="handleToggleDevInfo()" [disabled]="buttonIsDisabled">Toggle Dev Info</button>
 	<div [ngSwitch]="status"
 		 class="devInfo"
 		 *ngIf="showDevInfo">
