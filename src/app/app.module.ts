@@ -10,6 +10,8 @@ import { InfoComponent } from './info/info.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { NumtonamePipe } from 'src/shared/numtoname.pipe';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,7 @@ import { NumtonamePipe } from 'src/shared/numtoname.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
