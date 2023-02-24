@@ -3,7 +3,7 @@
 	 [ngClass]="{'highlight': isHighlighted}">
 	<div *ngIf="status==='danger'"
 		 class="supertitle">Please read:</div>
-	<div class="title">{{title}}</div>
+	<div class="title">{{title | uppercase}}</div>
 	<div class="body">{{body}}</div>
 	    <input
     type="checkbox"
