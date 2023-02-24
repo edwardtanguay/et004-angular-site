@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Info Site';
-  message = 'Welcome to this Angular site.'
+  message = 'Welcome to this Angular site.';
+
 }
