@@ -8,6 +8,7 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
 import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { NumtonamePipe } from 'src/shared/numtoname.pipe';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,12 @@ import { EmployeesComponent } from './employees/employees.component';
     TopMenuComponent,
     HomeComponent,
     InfoComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    NumtonamePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
