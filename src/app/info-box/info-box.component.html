@@ -1,5 +1,6 @@
 <div class="card"
-	 [ngStyle]="{'color': color, 'border': '1px solid ' + color}">
+	 [ngStyle]="{'color': color, 'border': '1px solid ' + color}"
+	 [ngClass]="{'highlight': isHighlighted}">
 	<div *ngIf="status==='danger'"
 		 class="supertitle">Please read:</div>
 	<div class="title">{{title}}</div>

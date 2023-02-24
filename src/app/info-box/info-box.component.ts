@@ -9,6 +9,7 @@ export class InfoBoxComponent {
 	@Input() title = 'Information';
 	@Input() body = '(watch this space...)';
 	@Input() status = '';
+	@Input() isHighlighted = false;
 	color = '';
 	showDevInfo = true;
 
